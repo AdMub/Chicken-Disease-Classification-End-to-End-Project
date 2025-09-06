@@ -2,11 +2,11 @@ from src.constants import *
 import os
 from pathlib import Path
 from src.utils.common import read_yaml, create_directories
-from src.entity.config_entity import (DataIngestionConfig,
+from src.entity.config_entity import (DataIngestionConfig)
                                                 #PrepareBaseModelConfig,
-                                                PrepareCallbacksConfig,
-                                                TrainingConfig,
-                                                EvaluationConfig)
+                                                #PrepareCallbacksConfig,
+                                                #TrainingConfig,
+                                                #EvaluationConfig)
 
 
 
