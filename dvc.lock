@@ -73,7 +73,7 @@ stages:
       params.yaml:
         AUGMENTATION: true
         BATCH_SIZE: 16
-        EPOCHS: 10
+        EPOCHS: 5
         IMAGE_SIZE:
         - 224
         - 224
@@ -81,7 +81,7 @@ stages:
     outs:
     - path: artifacts/training/model.keras
       hash: md5
-      md5: fe1bc6f5614708eb487f8f8007d996e6
+      md5: 55b60bd149718d1c3b45e68c727075cc
       size: 59543588
   evaluation:
     cmd: python -m src.pipeline.stage_04_evaluation
@@ -93,7 +93,7 @@ stages:
       nfiles: 390
     - path: artifacts/training/model.keras
       hash: md5
-      md5: fe1bc6f5614708eb487f8f8007d996e6
+      md5: 55b60bd149718d1c3b45e68c727075cc
       size: 59543588
     - path: config/config.yaml
       hash: md5
@@ -113,5 +113,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: eb1e09ea4769bcf534930a4825b45320
-      size: 72
+      md5: 0ba9293860208de033fd96d157b8d0c6
+      size: 73

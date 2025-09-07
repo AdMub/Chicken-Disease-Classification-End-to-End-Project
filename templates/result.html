@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='script/static.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Prediction Result</h2>
+    <div id="result-box">
+      <p>{{ result }}</p>
+    </div>
+    <a href="{{ url_for('form') }}" class="btn">Try Again</a>
+  </div>
+</body>
+</html>
